@@ -1,5 +1,6 @@
 import React from "react";
 import mePic from "../../assets/aboutMe/ada1.jpg";
+import CommentCard from "./CommentCard";
 
 const AboutMeScreen = () => {
   return (
@@ -31,24 +32,46 @@ const AboutMeScreen = () => {
           Ada George
         </span>
       </article>
-      <article className="bg-p-dark p-20 my-2">
-        <div className="p-20 relative max-w-screen-lg m-auto bg-p-clear">
-          <div className="bg-m-clear w-3/4">
-            <h2 className="text-8xl font-dancing text-white">Freedom</h2>
-            <p className="font-sans ">
+      <article className="bg-p-dark p-20 ">
+        <div className="p-20 flex max-w-screen-lg m-auto bg-p-clear-2 rounded-lg">
+          <div className="bg-m-clear">
+            <p className="text-8xl font-dancing text-white">Freedom</p>
+            <p className="font-sans">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
               mattis, magna ut rhoncus fermentum
             </p>
           </div>
-          <div className="border-4 border-p-clear w-36 h-56 absolute top-10 right-20 rounded-rad rotate-[15deg] overflow-hidden">
-            <img
-              className="object-fill"
-              src={mePic}
-              alt=""
-            />
+          <div className="w-1/2  overflow-hidden">
+            <img className="object-fill" src={mePic} alt="" />
           </div>
         </div>
       </article>
+      <section className="max-w-screen-lg m-auto my-20">
+        <h3 className="text-5xl text-center text-s-dark drop-shadow-[0_0_3px_rgba(0,0,0,0.25)] my-6 max-w-md leading-relaxed mx-auto mb-16 max-sm:text-4xl max-sm:mx-8">What People says about me</h3>
+        <div className="flex max-md:flex-col max-md:items-center gap-10 m-auto">
+          <CommentCard
+            comment={
+              "Working with Ada is a rewarding experience, she is always looking to do a good job and make improvements in whatever she does."
+            }
+            author={"Humberto Rocha"}
+            rol={"former employer"}
+          />
+          <CommentCard
+            comment={
+              "She has clear and concise proposals on how to support and make any project grow."
+            }
+            author={"Guillermo Vidal"}
+            rol={"former coworker"}
+          />
+          <CommentCard
+            comment={
+              "Miss Adashi has leadership characteristics, needs-solving skills, punctuality and is characterized by her communication skills."
+            }
+            author={"Jonnathan Salas"}
+            rol={"former coworker"}
+          />
+        </div>
+      </section>
     </>
   );
 };

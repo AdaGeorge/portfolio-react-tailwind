@@ -9,7 +9,7 @@ const ProjectsSection = () => {
   return (
     <section className="bg-p-dark py-6">
       <h3 className="text-center text-4xl text-p-clear-2 py-6">My Projects</h3>
-      <div className="flex flex-wrap justify-center gap-4 py-10">
+      <div className="flex flex-wrap justify-center gap-4 py-10 lg:mx-20">
         <ProjectCard
           srcImg={rick}
           altImg="rick and morty project image"
