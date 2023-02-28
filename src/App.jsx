@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import Footer from './components/shared/Footer'
+import InProgress from './components/shared/InProgress'
 import Navbar from './components/shared/Navbar'
 import AboutMeScreen from './pages/aboutMe/AboutMeScreen'
 import ContactScreen from './pages/ContactScreen'
@@ -15,7 +16,9 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeScreen />} />
           <Route path='/aboutme' element={<AboutMeScreen/>} />
-          <Route path='/contact' element={<ContactScreen/>} />
+          <Route path='/contact' element={<InProgress/>} />
+          <Route path='/projects' element={<InProgress/>} />
+          <Route path='/blog' element={<InProgress/>} />
         </Routes>
       </main>
       <Footer/>
