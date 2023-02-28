@@ -65,9 +65,9 @@ const Navbar = () => {
           {links}
         </ul>
       </div>
-      <div className="w-20">
+      <Link className="w-20" to='/'>
         <img src={logo} alt="LOGO" />
-      </div>
+      </Link>
 
       <button onClick={openMenu} className="md:hidden">
         <FaBars className="nav-menu" />
