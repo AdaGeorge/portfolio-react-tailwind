@@ -90,11 +90,10 @@ const MySkillsSection = () => {
             }}
           />
         </article>
-        <div className=" w-60 h-60 rounded-full bg-p-clear-2 flex justify-center items-center max-md:hidden">
+        <div className=" w-60 h-60 rounded-full bg-p-clear-2 flex justify-center items-center max-md:hidden hover:shadow-[0_0_15px_rgba(255,255,255)] ">
           <div className=" w-56 h-56 rounded-full bg-s-dark flex justify-center items-center">
             <button onClick={handleBtn}>
             <h3 className="text-center text-4xl text-p-clear-2 py-2">SKILLS</h3>
-            {hidden && <span className="text-white opacity-40">Click here</span>}
             </button>
           </div>
         </div>
