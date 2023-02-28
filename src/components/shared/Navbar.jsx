@@ -1,6 +1,8 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from '../../assets/logoAG.png'
+
 
 const navLinks = [{value: "HOME", link: '/'}, {value: "ABOUT ME", link:'/aboutme'}, {value: "PORTFOLIO", link: '/projects'}, {value: "CONTACT", link: '/contact'}, {value: "BLOG", link: 'blog'}];
 
@@ -40,10 +42,10 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="flex justify-between content-center p-6 bg-p-clear-2">
+    <nav className="flex justify-between content-center p-4 bg-p-clear-2">
       <div
         id="links"
-        className="
+        className=" leading-10
           max-md:hidden 
           max-md:absolute 
           max-md:top-11 
@@ -63,11 +65,11 @@ const Navbar = () => {
           {links}
         </ul>
       </div>
-      <a href="/">
-        <h1>LOGO</h1>
-      </a>
+      <div className="w-20">
+        <img src={logo} alt="LOGO" />
+      </div>
 
-      <button onClick={openMenu} className="lg:hidden md:hidden">
+      <button onClick={openMenu} className="md:hidden">
         <FaBars className="nav-menu" />
       </button>
     </nav>
